@@ -1,5 +1,5 @@
-@import '/css/book-list.css';
-@import '/css/book-details.css';
+@import '../css/book-list.css';
+@import '../css/book-details.css';
 @import 'css/home-page.css';
 @import 'css/book-review.css';
 @import 'css/review-preview.css';
