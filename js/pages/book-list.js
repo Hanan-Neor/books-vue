@@ -5,7 +5,7 @@ export default {
     props: ['books'],
 
     template: `
-        <section class="book-list">
+        <section class="book-list page-layout">
             <ul>
                 <!-- <li v-for="book in this.books" @click="onBookClick(book.id)"> -->
                 <li v-for="book in this.books">

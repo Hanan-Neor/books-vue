@@ -22,6 +22,12 @@ body{
     /* min-height: 100%; */
 }
 
+.page-layout{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
 .book-app{
     /* padding: 20px; */
 }
@@ -31,18 +37,21 @@ body{
     justify-content: space-between;
     align-items: center;
     color: whitesmoke;
-    background-color: rgb(76, 106, 131);
+    background-color: rgb(62, 115, 149);
     padding: 20px;
+    height: 10vh;
 }
 .app-footer{
     color: whitesmoke;
     text-align: center;
-    background-color: rgb(76, 106, 131);
+    background-color: rgb(62, 115, 149);
     padding: 20px;
+    height: 10vh;
 }
 
 .book-filter{
-    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 a{
