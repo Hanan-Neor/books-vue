@@ -1,9 +1,9 @@
 export default {
 
     template: `
-    <header class="app-footer">
-        copyrights
-    </header>
+    <footer class="app-footer">
+       <span> copyrights</span>
+</footer>
     `,
 }
 

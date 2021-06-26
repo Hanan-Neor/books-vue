@@ -33,7 +33,6 @@ function makeId(length = 7) {
 // be triggered. The function will be called after it stops being called for
 // `wait` milliseconds.
 function debounce(func, wait) {
-    console.log('hi');
     let timeout;
   
     return function executedFunction(...args) {

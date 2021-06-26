@@ -45,7 +45,6 @@ export default {
         onSubmitRev() {
             if(this.name === '' || this.review ==='')return;
             const reviewObj = { name: this.name, rate: this.rate, date: Date.now(), review: this.review };
-            // console.log(reviewObj);
             bookService.addReview(this.$route.params.bookId, reviewObj)
                 .then(book => {
                     this.reviews = book.reviews;
@@ -65,7 +64,6 @@ export default {
         }
     },
     created() {
-        console.log(this.book.reviews);
         // this.bb=this.book.reviews
         this.reviews = this.book.reviews;
     },

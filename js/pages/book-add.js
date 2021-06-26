@@ -6,15 +6,17 @@ export default {
     // props: ['books'],
 
     template: `
-            <section class="book-filter app-layout">
-        <label>Search:</label>
-        <!-- <input type="text" v-model="x" @input="onSearchInput"> -->
-        <!-- <input type="text" v-model="x" @change="onSearchInput"> -->
-        <input type="text" v-model="x" @input="onSearchInput">
+            <section class="book-add app-layout page-layout">
+        <div>
+            <label>Search:</label>
+            <!-- <input type="text" v-model="x" @input="onSearchInput"> -->
+            <!-- <input type="text" v-model="x" @change="onSearchInput"> -->
+            <input type="text" v-model="x" @input="onSearchInput">
+        </div>
         <ul>
 <li v-for="book in this.y.items" :key="book.id">
     <button @click="onAddBook(book)">+</button>
-    {{book.volumeInfo.title}} -- {{book.volumeInfo.authors}}
+    <b>{{book.volumeInfo.title}}</b> -- {{book.volumeInfo.authors}}
 </li>
 </ul>
             <!-- <hr><hr><hr> -->
@@ -38,29 +40,14 @@ export default {
 
 
         onSearchInput() {
-            
-
-        // fetch(`https://www.googleapis.com/books/v1/volumes?printType=books&q=${this.x}`)
-        //         .then((res) => {
-        //             console.log(res);
-        //             const data = res.json()
-        //             console.log(data);
-        //             this.y = data
-        //             console.log('y',this.y);
-        //             return data
-        //         });
-        //     console.log(this.y);
-        axios.get(`https://www.googleapis.com/books/v1/volumes?printType=books&q=${this.x}`)
+            axios.get(`https://www.googleapis.com/books/v1/volumes?printType=books&q=${this.x}`)
                 .then((res) => {
                     this.y = res.data
-                    console.log('y',this.y);
                     // return data
                 });
-            console.log(this.y);
         },
 
         onAddBook(googleBook){
-            console.log(googleBook);
             // bookToSave{}
             bookService.addGoogleBook(googleBook);
             this.$router.push('/book')
@@ -87,3 +74,5 @@ export default {
     }
     
 }
+
+

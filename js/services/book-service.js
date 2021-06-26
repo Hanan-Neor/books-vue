@@ -36,7 +36,6 @@ function addReview(bookId, review) {
     const x = books.find(book => book.id === bookId);
     if (!x.reviews) x.reviews = [];
     x.reviews.unshift(review);
-    console.log(x);
     // storageService._save(BOOKS_KEY, books);
 
 gBooks = books;  ///////////////////               ========     strange way to make sure that after adding new book it will be ok in details  ==========

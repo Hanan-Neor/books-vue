@@ -28,11 +28,6 @@ export default {
         };
     },
     methods: {
-        // onBookClick(bookId) {
-        //     console.log(bookId);
-        //     this.$emit('selected',bookId)
-
-        // }
 
     },
 

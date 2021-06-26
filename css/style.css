@@ -18,7 +18,7 @@ body{
 }
 
 .app-layout{
-    min-height: 75vh;
+    min-height: 80vh;
     /* min-height: 100%; */
 }
 
@@ -42,10 +42,12 @@ body{
     height: 10vh;
 }
 .app-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: whitesmoke;
     text-align: center;
     background-color: rgb(62, 115, 149);
-    padding: 20px;
     height: 10vh;
 }
 
@@ -58,5 +60,20 @@ a{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+
+}
+
+
+.book-add div:first-child{
+text-align: center;
+}
+
+
+
+.book-add ul{
+
+    /* max-width: 600px; */
+width: fit-content;
+    text-align: left;
 
 }
