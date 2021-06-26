@@ -1,0 +1,22 @@
+.book-review textarea{
+    display: block;
+}
+
+
+.book-review .reviews{
+    padding: 10px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* gap:10px */
+}
+
+.book-review p{
+    margin: 10px;
+}
+
+.book-review .reviews li{
+border:1px solid black;
+margin:10px;
+border-radius: 10px;
+}

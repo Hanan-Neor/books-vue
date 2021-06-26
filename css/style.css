@@ -1,0 +1,53 @@
+@import '/css/book-list.css';
+@import '/css/book-details.css';
+@import 'css/home-page.css';
+@import 'css/book-review.css';
+@import 'css/review-preview.css';
+
+*{
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+
+body{
+    overflow-wrap: break-word;
+    margin:0;
+    background-color:rgb(243, 243, 217);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app-layout{
+    min-height: 75vh;
+    /* min-height: 100%; */
+}
+
+.book-app{
+    /* padding: 20px; */
+}
+
+.app-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    background-color: rgb(76, 106, 131);
+    padding: 20px;
+}
+.app-footer{
+    color: whitesmoke;
+    text-align: center;
+    background-color: rgb(76, 106, 131);
+    padding: 20px;
+}
+
+.book-filter{
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+}
